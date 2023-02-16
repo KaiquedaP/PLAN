@@ -64,3 +64,22 @@ public class Aluno {
     
     
 }
+
+
+
+
+
+
+package exercicio;
+
+
+public class Main {
+    public static void main(String[] args) {
+         
+        Aluno aluno = new Aluno ("Caio", 10, 10);
+        
+        System.out.println("nome: " + aluno.getNome());
+        System.out.println("Media: " + aluno.calcularMedia());
+        aluno.consultarSituacao();
+    }
+}
