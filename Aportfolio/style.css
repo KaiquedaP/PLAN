@@ -17,6 +17,11 @@ header{
     z-index: 10;
     background: violet;
 }
+section{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
 :root{
     --bg-color:#D7D7D7;
     --text-color: #E1E1E1;
@@ -76,3 +81,65 @@ header{
     font-weight: 500;
     transition: ease .50s;
 }
+.btn-header:houver{
+    color: var(--bg-color);
+    background: var(--main-color);
+    transform: scale(1.2);
+}
+.home{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 5rem;
+
+}
+.home-text h1{
+    margin: 12px 0 25px 0;
+    font-size: var(--big-font);
+}
+.home-text h5{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.home-text span{
+    color: var(--main-color);
+}
+.home-text p{
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.home-social-media a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    color: var(--bg-color);
+    margin: 0 20px 30px 0;
+}
+.home-social-media a:hover{
+    transform: scale(1.2);
+    background: rgb(139, 0, 0);
+    transition: .50s;
+}
+.btn{
+    display: inline-block;
+    color: var(--bg-color);
+    background: var(--main-color);
+    font-size: var(--p-font);
+    padding: 10px 35px;
+    border-radius: 10px;
+    transition: ease .50s;
+}
+.btn:houver{
+    transform: scale(1.2);
+}
+
