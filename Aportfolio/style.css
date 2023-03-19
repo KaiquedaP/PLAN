@@ -9,6 +9,14 @@ body{
     background: var(--bg--color);
     color: var(--text-color);
 }
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: violet;
+}
 :root{
     --bg-color:#D7D7D7;
     --text-color: #E1E1E1;
@@ -17,4 +25,43 @@ body{
     --big-font: 4.5rem;
     --h2-font: 3.2rem;
     --p-font: 1.2rem;
+}
+#header{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+/* ids e class */
+.logo-header img{
+    width: 50px;
+}
+.navbar-header{
+    display: flex;
+    list-style: none;
+}
+.navbar-header li{
+    position: relative;
+}
+.navbar-header a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--main-color);
+    bottom: -5px;
+    left: 0;
+    transition: ease .50s;
+}
+.navbar-header a:hover::after{
+    width: 100%;
+}
+#navbar-icon{
+    font-size: 25px;
+    color: var(--text-color);
+    z-index: 11;
+    cursor: pointer;
+    display: none;
 }
